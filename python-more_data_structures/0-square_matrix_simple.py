@@ -8,5 +8,5 @@ def square_matrix_simple(matrix=[]):
     new_matrix = matrix[:][:]
 
     for i in range(len(matrix)):
-        new_matrix.append(map(square, matrix[i]))
-    return new_matrix
+        new_matrix.append(list(map(square, matrix[i])))
+    return new_matrx
