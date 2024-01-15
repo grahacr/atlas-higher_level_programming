@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""This module defines a square by private instance attribute size"""
+"""This module defines a class with private attribute"""
 
 
 class Square:
     """This class defines a square by private instance attribute size"""
     def __init__(self, size=0):
-        """This function initializes a simple square if size is digit above 0"""
+        """This method initializes a simple square if size is digit above 0"""
         if size.isfloat():
             self.__size = size
             elif:
