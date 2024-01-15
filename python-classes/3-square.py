@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" This module defines a class named Square with variables and functions
+""" Module 3-square defines a class named Square with variables and functions
 """
 
 
