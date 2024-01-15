@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Defines a class named Square with fields"""
+"""
+This module defines a class named Square with fields
+"""
 
 
 class Square:
