@@ -1,0 +1,2 @@
+class Square(self)
+    pass
