@@ -6,9 +6,9 @@ class Square:
     """ class defines a square by private instance attribute size"""
     def __init__(self, size=0):
         """ method initializes a simple square if size is digit above 0"""
-        if size.isfloat():
+        if isinstance(size, int):
             self.__size = size
-            elif:
-                raise TypeError("size must be an integer")
-                if size < 0:
-                    raise ValueError("size must be >= 0")
+        elif not isinstance(size, int):
+            raise TypeError("size must be an integer")
+        elif size < 0:
+            raise ValueError("size must be >= 0")
