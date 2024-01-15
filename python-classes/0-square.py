@@ -1,9 +1,5 @@
 #!/usr/bin/python3
-"""
-square = file for creating an empty class
-"""
+""" Defines class Square """
 class Square(self):
-    """
-    class Square is empty, for now
-    """
+    """ This class defines a square, currently empty """
     pass
