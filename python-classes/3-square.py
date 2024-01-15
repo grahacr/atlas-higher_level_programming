@@ -10,11 +10,11 @@ class Square:
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
-        elif:
+        else:
             self.__size = size
 
     def area(self):
         """ This method returns the square area of size"""
-        if self.size:
-            sqArea = size * size
+        if self.__size:
+            sqArea = self.__size * self.__size
             return sqArea
