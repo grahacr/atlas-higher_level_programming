@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module defines a class with private attribute"""
+"""Defines a class named Square with fields"""
 
 
 class Square:
