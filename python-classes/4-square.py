@@ -13,7 +13,7 @@ class Square:
         """ method to retrieve size of class Square"""
         return (self.__size)
     
-    @property
+    @size.setter
     def size(self, value):
         """ method to set size of class Square to new value if meeting certain critiera:
         - must be an integer
