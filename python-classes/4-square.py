@@ -1,16 +1,19 @@
 #!/usr/bin/python3
 """ Module defines a class square with several methods and variables """
+
+
 class Square:
     """ Class defines a square with private instance size and multiple methods"""
     def __init__(self, size=0):
+        """ initialize a simple square """
         self.__size = size
     
-    @property
+    @property.getter
     def size(self):
         """ method to retrieve size of class Square"""
-        return self.__size
+        return (self.__size)
     
-    @property
+    @property.setter
     def size(self, value):
         """ method to set size of class Square to new value if meeting certain critiera:
         - must be an integer
@@ -25,4 +28,4 @@ class Square:
     
     def area(self):
         """ method to return the value of the square area of class Square"""
-        return self.__size * self.__size
+        return (self.__size * self.__size)
