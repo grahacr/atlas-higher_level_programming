@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-"""
-"""
+""" module creates a square based on positioning, with various methods """
 
 
 class Square:
-    """ Class defines a square """
+    """ Class initializes a square """
     def __init__(self, size=0, position=(0, 0)):
         self.__size = size
         self.__position = position
@@ -21,8 +20,7 @@ class Square:
 
     @size.setter
     def size(self, value):
-        """
-        """
+        """ method to set size of square to new value """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         if value < 0:
@@ -31,7 +29,7 @@ class Square:
     
     @position.setter
     def position(self, value):
-        """ """
+        """ method to define positioning of square """
         if (not isinstance(value, tuple) or
             len(value) != 2 or
             not all(isinstance(num, int) for num in value) or
@@ -44,6 +42,7 @@ class Square:
         return (self.__size * self.__size)
     
     def my_print(self):
+        """method to print square """
         if self.__size == 0:
             print("")
             return
