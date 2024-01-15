@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-"""
-"""
+""" Class Square defines a square with methods to define and write """
+
+
 class Square:
     """ Class defines a square """
     def __init__(self, size=0):
