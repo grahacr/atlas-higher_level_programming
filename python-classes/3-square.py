@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-""" Module 3-square defines a class named Square with variables and functions
-"""
+""" Module 3-square defines a class named Square with variables and functions """
 
 
 class Square:
@@ -11,11 +10,11 @@ class Square:
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
-        else:
+        elif:
             self.__size = size
 
     def area(self):
         """ This method returns the square area of size"""
         if self.size:
-            sqArea = size x size
+            sqArea = size * size
             return sqArea
