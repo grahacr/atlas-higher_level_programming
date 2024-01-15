@@ -8,23 +8,22 @@ class Square:
         """ initialize a simple square """
         self.__size = size
     
-    @property.getter
+    @property
     def size(self):
         """ method to retrieve size of class Square"""
         return (self.__size)
     
-    @property.setter
+    @property
     def size(self, value):
         """ method to set size of class Square to new value if meeting certain critiera:
         - must be an integer
         - must be greater than 0
         """
-        if type(value) != int:
+        if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        elif value < 0:
+        if value < 0:
             raise ValueError("size must be >= 0")
-        else:
-            self.__size = value
+        self.__size = value
     
     def area(self):
         """ method to return the value of the square area of class Square"""
