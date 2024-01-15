@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" Defines class Square """
-class Square(self):
+""" This module defines a class named Square """
+
+
+class Square():
     """ This class defines a square, currently empty """
     pass
