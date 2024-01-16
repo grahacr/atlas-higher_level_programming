@@ -21,7 +21,7 @@ class Rectangle:
     def height(self):
         """ method to retrieve height of rectangle """
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """ method to set height of rectangle if int and above 0"""
@@ -35,7 +35,7 @@ class Rectangle:
     def width(self):
         """ method to retrieve width of rectangle """
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         """ method to set width of rectangle if int and above 0"""
