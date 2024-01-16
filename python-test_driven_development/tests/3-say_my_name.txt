@@ -1,0 +1,21 @@
+'Test file for say_my_name function'
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+def say_my_name(first_name, last_name=""):
+    """ this function prints first name and last name
+
+    parameters:
+    - first_name: first name
+    - last_name: last name
+
+    output - print:
+    My name is <first_name> <last_name>
+
+    Examples:
+    >>> say_my_name("Courtney, Graham)
+    My name is Courtney Graham
+
+    Examples:
+    >>> say_my_name(5, "Graham)
+
+    """
