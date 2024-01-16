@@ -1,1 +1,25 @@
-tests here later
+'Test file for add_integer function'
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+def add_integer(a, b=98):
+    """
+    this function adds two integers and returns the result.
+
+    parameters:
+    - a (int or float): first number
+    - b (int or float): second number, default is 98.
+
+    Return:
+    sum of a + b in int 
+
+    Examples:
+    >>> add_integer(3, 5)
+    8
+
+    >>> add_integer(8)
+    106
+
+    >>> add_integer("hello", 10)
+    a must be an integer
+    """
