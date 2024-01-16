@@ -17,18 +17,20 @@ class Rectangle:
         """ method to retreive height of rectangle """
         return(self.__height)
 
-    @property.width_setter
+    @width.setter
     def width(self, value):
         """ method to set width of rectangle if int and above 0 """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
+        self.__width = value
 
-    @property.height_setter
-    """ method to set height of rectangle if int and above 0 """
+    @height.setter
     def height(self, value):
+        """ method to set height of rectangle if int and above 0 """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
+        self.__height = value
