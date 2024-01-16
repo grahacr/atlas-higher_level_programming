@@ -46,14 +46,17 @@ class Rectangle:
         self.__width = value
 
     def area(self):
+        """ method returns area of rectangle """
         return self.__height * self.__width
 
     def perimeter(self):
+        """ method returns perimeter of rectangle """
         if self.__width == 0 or self.__height == 0:
             return 0
         return 2 * (self.__width + self.__height)
 
     def __str__(self):
+        """ private method to create copy of rectangle for printing """
         copy_str = ""
         if self.__width > 0 and self.__height > 0:
             for row in range(self.__height):
@@ -63,3 +66,7 @@ class Rectangle:
                     copy_str += '\n'
             return copy_str
         return copy_str
+    
+    def __repr__(self):
+        """ method to reproduce conductor call for rectangle """
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)"
