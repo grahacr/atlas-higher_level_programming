@@ -66,3 +66,7 @@ class Rectangle:
                     copy_str += '\n'
             return copy_str
         return copy_str
+    
+    def __repr__(self):
+        """ method to reproduce conductor call for rectangle """
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)"
