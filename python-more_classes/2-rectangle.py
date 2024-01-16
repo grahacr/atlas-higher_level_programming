@@ -39,7 +39,7 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """ method to set width of rectangle if int and above 0"""
-        if not isinstane(value, int):
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
@@ -49,7 +49,6 @@ class Rectangle:
         return self.__height * self.__width
 
     def perimeter(self):
-        if self.__height or self.__height == 0:
+        if self.__width == 0 or self.__height == 0:
             return 0
         return 2 * (self.__width + self.__height)
-
