@@ -22,11 +22,11 @@ def say_my_name(first_name, last_name=""):
     >>> say_my_name(5, "Graham")
     Traceback (most recent call last):
     ...
-    TypeError: first_name must be a string
+        TypeError: first_name must be a string
 
     'first name not string, last name string'
     >>> say_my_name("Courtney", 9.5)
     Traceback (most recent call last):
     ...
-    TypeError: last_name must be a string
+        TypeError: last_name must be a string
     """
