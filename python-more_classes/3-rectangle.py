@@ -59,5 +59,7 @@ class Rectangle:
             for row in range(self.__height):
                 for column in range(self.__width):
                     copy_str += '#'
+                if row < self.__height - 1:
+                    copy_str += '\n'
             return copy_str
         return copy_str
