@@ -12,10 +12,12 @@ def say_my_name(first_name, last_name=""):
     My name is <first_name> <last_name>
 
     Examples:
-    >>> say_my_name("Courtney, Graham)
+    >>> say_my_name("Courtney", "Graham")
     My name is Courtney Graham
 
     Examples:
-    >>> say_my_name(5, "Graham)
+    >>> say_my_name(5, "Graham")
+    Traceback (most recent call last):
+    first_name must be a string
 
     """
