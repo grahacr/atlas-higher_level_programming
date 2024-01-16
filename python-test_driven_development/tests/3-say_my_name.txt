@@ -1,4 +1,6 @@
-'Test file for say_my_name function'
+'Test file for say_my_name module'
+
+
 >>> say_my_name = __import__('3-say_my_name').say_my_name
 
 def say_my_name(first_name, last_name=""):
@@ -12,12 +14,14 @@ def say_my_name(first_name, last_name=""):
     My name is <first_name> <last_name>
 
     Examples:
+    'two strings'
     >>> say_my_name("Courtney", "Graham")
     My name is Courtney Graham
 
-    Examples:
+    'one arg not a string'
     >>> say_my_name(5, "Graham")
     Traceback (most recent call last):
-    first_name must be a string
+    ...
+    TypeError: first_name must be a string
 
     """
