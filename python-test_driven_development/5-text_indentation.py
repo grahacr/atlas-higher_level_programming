@@ -15,8 +15,8 @@ def text_indentation(text):
             break
     if parts:
         for i in range(len(parts)):
-            print(parts[i], end="")
-            print(char, end="\n")
+            print(parts[i])
+            print(char, end="\n\n")
             if i != len(parts)-2:
                 print()
     else:
