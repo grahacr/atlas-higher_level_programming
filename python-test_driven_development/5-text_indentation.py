@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-""" """
+""" module contains text_indendation function """
 def text_indentation(text):
+    """ function to separate and print text at special characters """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     special_chars = ['.', '?', ':']
