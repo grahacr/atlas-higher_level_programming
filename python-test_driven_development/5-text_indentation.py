@@ -20,4 +20,3 @@ def text_indentation(text):
             print("\n")
     else:
         print(text, end="")
-text_indentation("Holberton.School")
