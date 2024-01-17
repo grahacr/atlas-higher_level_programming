@@ -6,7 +6,7 @@ class TestMaxInteger(unittest.TestCase):
     """ """
     def test_ordered_list(self):
         """ test ordered list of integers """
-        self.assertEqual(max_integer(test_list = [1, 2, 4, 6]), 6)
+        self.assertEqual(max_integer([1, 2, 4, 6]), 6)
 
     def test_unordered_list(self):
         """ test unordered list of integers """
