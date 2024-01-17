@@ -18,6 +18,6 @@ def text_indentation(text):
             print(parts[i], end="")
             print(char, end="")
             if i != len(parts)-2:
-                print("\n")
+                print()
     else:
-        print(text)
+        print(text, end="")
