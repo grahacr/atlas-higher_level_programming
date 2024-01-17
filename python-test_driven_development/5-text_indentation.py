@@ -14,11 +14,10 @@ def text_indentation(text):
             parts = temp_parts
             break
     if parts:
-        for i in range(len(parts)):
-            print(parts[i])
+        for i in range(len(parts)-2):
+            print(parts[i], end="")
             print(char)
-            print("\n\n")
-            if i != len(parts)-2:
-                print()
+            print("\n")
     else:
         print(text, end="")
+text_indentation("Holberton.School")
