@@ -13,7 +13,7 @@ print square using hash symbol #
 
 Examples:
 'with string passed instead of int'
->>> print_square("hello")
+>>> print_square(hello)
 Traceback (most recent call last):
 ...
     TypeError: size must be an integer
