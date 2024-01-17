@@ -1,0 +1,39 @@
+'Test file for print_square module'
+
+
+>>> print_square = __import__('4-print_square').print_square
+
+def print_square(size):
+""" this function prints a square """
+parameters:
+- size: length of square
+
+output:
+print square using hash symbol #
+
+Examples:
+'with string passed instead of int'
+>>> print_square("hello")
+Traceback (most recent call last):
+...
+    TypeError: size must be an integer
+
+'passing float instead of int'
+>>> print_square(6.7)
+Traceback (most recent call last):
+...
+    TypeError: size must be an integer
+
+'passing negative number'
+>>> print_square(-9)
+Traceback (most recent call last):
+...
+    TypeError: size must be >= 0
+
+'correct arguments'
+>>> print_square(3)
+###
+###
+###
+
+"""
