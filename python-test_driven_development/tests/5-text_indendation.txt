@@ -1,0 +1,23 @@
+'Test file for text_indentation module'
+
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+def text_indentation(text):
+""" this function separates and prints input text
+parameters:
+- text: text to separate and print
+
+output:
+text with two new lines after each special character: . ? :
+
+Examples:
+'normal example'
+>>> text_indentation("Hello. How are you? I hope well!")
+Hello.
+
+How are you?
+
+I hope well!
+
+"""
