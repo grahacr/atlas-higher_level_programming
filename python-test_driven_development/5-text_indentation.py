@@ -10,10 +10,10 @@ def text_indentation(text):
     parts = []
     for char in special_chars:
         parts += text.split(char)
-    if parts:
-        for i in range(len(parts)-1):
-            print(parts[i], end="")
-            print(char)
-            print("\n\n")
-    else:
-        print(text)
+        if parts:
+            for i in range(len(parts)-1):
+                print(parts[i], end="")
+                print(char)
+                print("\n\n")
+        else:
+            print(text)
