@@ -14,4 +14,4 @@ def text_indentation(text):
                 print(parts[i], end="")
                 print(char)
                 print("\n\n")
-        print(text)
+
