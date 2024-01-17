@@ -14,7 +14,7 @@ def text_indentation(text):
             parts = temp_parts
             break
     if parts:
-        for i in range(len(parts)-1):
+        for i in range(len(parts)):
             print(parts[i], end="")
             print(char, end="")
             if i != len(parts)-2:
