@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ module contains function for printing square """
+
+
 def print_square(size):
     """ function to print square """
     if not isinstance(size, int):
