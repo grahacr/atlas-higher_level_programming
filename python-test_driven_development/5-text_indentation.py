@@ -9,4 +9,4 @@ def text_indentation(text):
         for i in range(len(parts)-1):
             print(parts[i], end="")
             print(char)
-            print("\n")
+            print("\n\n")
