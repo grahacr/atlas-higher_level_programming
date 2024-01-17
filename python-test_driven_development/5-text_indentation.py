@@ -9,7 +9,10 @@ def text_indentation(text):
     special_chars = ['.', '?', ':']
     parts = []
     for char in special_chars:
-        parts += text.split(char)
+        temp_parts = text.split(char)
+        if len(temp_parts) > 1:
+            parts = temp_parts
+            break
     if parts:
         for i in range(len(parts)-1):
             print(parts[i], end="")
