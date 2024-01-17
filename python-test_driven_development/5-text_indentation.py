@@ -20,4 +20,4 @@ def text_indentation(text):
             print("\n\n")
     else:
         for i in range(len(text)-1):
-            print(i)
+            print(text[i])
