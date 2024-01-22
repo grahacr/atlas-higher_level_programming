@@ -2,6 +2,6 @@
 """ This module looks at available attributes and methods of object """
 
 
-def lookup (obj):
+def lookup(obj):
     """ This function returns the directory of an object """
-    return(dir(obj))
+    return (dir(obj))
