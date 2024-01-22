@@ -1,0 +1,1 @@
+This project is for learning inheritance in Python! This includes base classes, parent and child classes, etc.
