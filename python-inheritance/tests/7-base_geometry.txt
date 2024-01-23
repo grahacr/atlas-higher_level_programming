@@ -1,0 +1,26 @@
+'Test file for base_geometry module'
+>>> base_geometry = __import__('7-base_geometry').base_geometry
+
+'regular test with valid integer'
+>>> bg = BaseGeometry.integer_validator("square", 10)
+
+'area method'
+>>> bg = BaseGeometry()
+>>> bg.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
+
+'integer is zero'
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("rectangle", 0)
+Traceback (most recent call last):
+...
+ValueError: age must be greater than 0
+
+'non integer test'
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("donut", "hole")
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
