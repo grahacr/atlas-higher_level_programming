@@ -7,12 +7,13 @@ def print_sorted(list):
     this function prints a sorted list.
 
     parameter:
-    - self (initiated list)
+    - list: the list to be sorted
 
-    Return:
-    print sorted list
+    Returns:
+    None. prints sorted list
 
     Examples:
-    >>> MyList.print_sorted([3, 7, 2, 1])
+    >>> my_list = MyList([3, 7, 2, 1])
+    >>> my_list.print_sorted()
     [1, 2, 3, 7]
     """
