@@ -1,8 +1,11 @@
 'Test file for base_geometry module'
->>> base_geometry = __import__('7-base_geometry').base_geometry
+
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 'regular test with valid integer'
->>> bg = BaseGeometry.integer_validator("square", 10)
+>>> bg = BaseGeometry
+>>> bg.integer_validator("square", 10)
 
 'area method'
 >>> bg = BaseGeometry()
@@ -16,11 +19,25 @@ Exception: area() is not implemented
 >>> bg.integer_validator("rectangle", 0)
 Traceback (most recent call last):
 ...
-ValueError: age must be greater than 0
+ValueError: rectangle must be greater than 0
+
+'no arguments'
+>>> bg = BaseGeometry()
+>>> bg.integer_validator()
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
 'non integer test'
 >>> bg = BaseGeometry()
 >>> bg.integer_validator("donut", "hole")
 Traceback (most recent call last):
 ...
-TypeError: name must be an integer
+TypeError: donut must be an integer
+
+'negative integer'
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("triangle", -7)
+Traceback (most recent call last):
+...
+ValueError: triangle must be an integer
