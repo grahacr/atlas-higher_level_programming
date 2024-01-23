@@ -2,18 +2,21 @@
 
 >>> MyList = __import__('1-my_list').MyList
 
-def print_sorted(list):
-    """
-    this function prints a sorted list.
+'Create list of numbers'
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> print(my_list)
+[1, 4, 2, 3, 5]
 
-    parameter:
-    - list: the list to be sorted
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
 
-    Returns:
-    None. prints sorted list
-
-    Examples:
-    >>> my_list = MyList([3, 7, 2, 1])
-    >>> my_list.print_sorted()
-    [1, 2, 3, 7]
-    """
+'An empty list'
+>>> my_list = MyList()
+>>> my_list.print_sorted()
+[]
+"""
