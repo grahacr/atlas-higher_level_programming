@@ -1,0 +1,18 @@
+'Test file for 1-my_list function'
+
+>>> MyList = __import__('1-my_list').MyList
+
+def print_sorted(list):
+    """
+    this function prints a sorted list.
+
+    parameter:
+    - self (initiated list)
+
+    Return:
+    print sorted list
+
+    Examples:
+    >>> MyList.print_sorted([3, 7, 2, 1])
+    [1, 2, 3, 7]
+    """
