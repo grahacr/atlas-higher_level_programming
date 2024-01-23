@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ module defines non-empty class """
+
+
 class BaseGeometry:
     """ defines class named BaseGeometry """
     def area(self):
