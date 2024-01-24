@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
-"""module defines read file function"""
+""" module defines read file function"""
 
 
 def write_file(filename="", text=""):
