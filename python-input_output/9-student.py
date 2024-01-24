@@ -2,7 +2,7 @@
 """ module contains class Student """
 
 
-class Student(self):
+class Student:
     """ class Student initializes student objects """
     def __init__(self, first_name, last_name, age):
         self.firstname = first_name
