@@ -1,6 +1,6 @@
 #!/usr/bin/python3
+""" module contains function to convert json string """
 import json
-""" module contains function to convert json string to object data struct """
 
 
 def from_json_string(my_str):
