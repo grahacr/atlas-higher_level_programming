@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 """ Module for subclass Rectangle"""
+Base = __import__('base.py').Base
+
+
 class Rectangle(Base):
     """ create Rectangle class inherited from Base class"""
     def __init__(self, width, height, x=0, y=0, id=None):
