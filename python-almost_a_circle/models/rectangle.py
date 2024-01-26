@@ -68,11 +68,11 @@ class Rectangle(Base):
     def display(self):
         """ public method to display rectangle """
         display_str = ""
-        if self.__width > 0 and self.__height > 0:
-            for row in range(self.__height):
-                for column in range(self.__width):
-                    display_str += str('#')
-                if row < self.__height - 1:
-                    display_str += '\n'
+        if self.height == 0 or self.width == 0:
             return display_str
+        for y in range(self.height):
+            for x in range(self.width):
+                display_str += str('#')
+            if y != self.height - 1:
+                display_str += '\n'
         return display_str
