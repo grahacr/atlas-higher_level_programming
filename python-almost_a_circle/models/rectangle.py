@@ -66,6 +66,7 @@ class Rectangle(Base):
         return self.__height * self.__width
 
     def display(self):
+        """ public method to display rectangle """
         display_str = ""
         if self.__width > 0 and self.__height > 0:
             for row in range(self.__height):
