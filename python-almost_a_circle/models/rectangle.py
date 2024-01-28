@@ -75,4 +75,5 @@ class Rectangle(Base):
                 display_str += str('#')
             if y != self.height - 1:
                 display_str += '\n'
-        return display_str
+        print(display_str)
+
