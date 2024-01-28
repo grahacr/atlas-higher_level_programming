@@ -67,15 +67,10 @@ class Rectangle(Base):
 
     def display(self):
         """ public method to display rectangle """
-        display_str = ""
-        if self.height == 0 or self.width == 0:
-            return display_str
-        for y in range(self.height):
-            for x in range(self.width):
-                display_str += str('#')
-            if y != self.height - 1:
-                display_str += '\n'
-        print(display_str)
+        for _ in range(self.y):
+            print()
+        for i in range(self.height):
+            print(" " * self.x + str('#') * self.width)
 
     def __str__(self):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
