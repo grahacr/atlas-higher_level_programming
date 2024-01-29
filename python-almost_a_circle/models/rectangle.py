@@ -103,4 +103,4 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """ method to return dictionary representation of rectangle"""
-        return self.__dict__
+        return self.dict
