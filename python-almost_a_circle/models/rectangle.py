@@ -73,10 +73,12 @@ class Rectangle(Base):
             print(" " * self.x + str('#') * self.width)
 
     def __str__(self):
+        """ replace string conductor to print attributes of rectangle class"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.x, self.y, self.width, self.height)
 
     def update(self,*args):
+        """ update attributes based on command line args """
         if len(args) >= 1:
             self.id = arg[0]
         if len(args) >= 2:
