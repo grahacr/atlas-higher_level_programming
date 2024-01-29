@@ -100,3 +100,6 @@ class Rectangle(Base):
                 self.x = value
             elif key == "y":
                 self.y = value
+
+    def to_dictionary(self):
+        return self.__dict__
