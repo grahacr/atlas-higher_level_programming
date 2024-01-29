@@ -81,7 +81,7 @@ class Rectangle(Base):
         """ update attributes based on command line args and kwargs """
         if len(args) >= 1:
             self.id = args[0]
-            elif if len(args) >= 2:
+            elif len(args) >= 2:
             self.width = args[1]
             elif len(args) >= 3:
             self.height = args[2]
