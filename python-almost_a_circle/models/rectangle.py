@@ -99,4 +99,4 @@ class Rectangle(Base):
             elif key == "x":
                 self.x = value
             elif key == "y":
-                self.y =value
+                self.y = value
