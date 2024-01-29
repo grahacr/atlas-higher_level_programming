@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Module for subclass Rectangle"""
+""" Module for subclass Rectangle via Base """
 from models.base import Base
 
 
@@ -78,7 +78,7 @@ class Rectangle(Base):
             self.id, self.x, self.y, self.width, self.height)
 
     def update(self, *args, **kwargs):
-        """ update attributes based on command line args """
+        """ update attributes based on command line args and kwargs """
         if len(args) >= 1:
             self.id = args[0]
             elif if len(args) >= 2:
