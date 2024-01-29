@@ -12,4 +12,4 @@ class Square(Rectangle):
     def __str__(self):
         """ replace string conductor to print attributes of square """
         return "[Square] ({}) {}\{} - {}".format(
-            self.id, self.x, self.y, self.size)
+            self.id, self.x, self.y, self.height)
