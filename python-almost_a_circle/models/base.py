@@ -56,7 +56,7 @@ class Base:
     def load_from_file(cls):
         """method to load json string, convert to list of objects and return instance list"""
         filename = "{}.json".format(cls.__name__)
-        if not isfile(filename):
+        if not filename:
             return []
         with open(filename, 'r') as file:
             objects_list = cls.from_json_string(file.read())
