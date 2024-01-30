@@ -36,6 +36,7 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
+        """ create objects from json string"""
         if json_string is None:
             return []
         else:
@@ -43,9 +44,22 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
+        """method to create new instances """
         if cls.__name__ == "Rectangle":
             new_inst = cls(1, 1)
         if cls.__name__ == "Square":
             new_inst = cls(1)
         new_inst.update(**dictionary)
         return new_inst
+
+    def load_from_file(cls):
+        """method to load json string, convert to list of objects and return instance list"""
+        filename = "{}.json".format(cls.__name)
+        if not isfile(filename):
+            return []
+        with open(filename, 'r') as file:
+            objects_list = cls.from_json_string(file.read())
+        instance_list = []
+        for obj in objects_list:
+            instance_list.append(cls.create(**obj))
+        return instance_list
