@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ this module includes class Base"""
 import json
+import sys
 
 
 class Base:
@@ -22,6 +23,7 @@ class Base:
             return ('[]')
         return json.dumps(list_dictionaries)
 
+    @classmethod
     def save_to_file(cls, list_objs):
         """ class method to save json strings to file"""
         if list_objs is None:
