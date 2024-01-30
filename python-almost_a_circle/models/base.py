@@ -52,6 +52,7 @@ class Base:
         new_inst.update(**dictionary)
         return new_inst
 
+    @classmethod
     def load_from_file(cls):
         """method to load json string, convert to list of objects and return instance list"""
         filename = "{}.json".format(cls.__name)
