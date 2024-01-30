@@ -55,7 +55,8 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        """method to load json string, convert to list of objects and return instance list"""
+        """method to load json string, convert to object list
+        and return instance list"""
         filename = "{}.json".format(cls.__name__)
         if not isfile(filename):
             return []
