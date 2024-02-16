@@ -1,6 +1,6 @@
 --create first table
 
-CREATE TABLE IF NOT EXISTS first_table (
+CREATE TABLE IF NOT EXISTS hbtn_0c_c.first_table (
     id INT,
-    name VARCHAR(256),
-)
+    name VARCHAR(256)
+);
