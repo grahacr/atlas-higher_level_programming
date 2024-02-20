@@ -24,6 +24,6 @@ if __name__ == "__main__":
     )
     cities = cursor.fetchall()
     for city in cities:
-        print(city)
+        print(city[0])
     cursor.close()
     connection.close()
