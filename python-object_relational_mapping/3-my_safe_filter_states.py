@@ -21,7 +21,7 @@ if __name__ == "__main__":
         """SELECT id, name FROM states
         WHERE LOWER(name) LIKE LOWER(%s)
         ORDER BY states.id ASC;""",
-        (state + %,)
+        (state + "%",)
     )
     rows = cursor.fetchall()
     for row in rows:
