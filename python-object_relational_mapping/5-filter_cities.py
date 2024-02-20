@@ -23,7 +23,7 @@ if __name__ == "__main__":
         (state + '%',)
     )
     cities = cursor.fetchall()
-    for city in cities:
-        print(city[0])
+    city_names = ', '.join(city[0] for city in cities)
+    print(city_names)
     cursor.close()
     connection.close()
