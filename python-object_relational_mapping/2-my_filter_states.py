@@ -18,7 +18,7 @@ if __name__ == "__main__":
     state = sys.argv[4]
     cursor.execute(
         """SELECT id, name FROM states
-        WHERE name LIKE '{}'
+        WHERE LOWER(name) LIKE LOWER('{}')
         ORDER BY states.id ASC;""".format(state + "%")
     )
     rows = cursor.fetchall()
