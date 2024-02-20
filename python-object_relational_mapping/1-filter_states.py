@@ -14,7 +14,7 @@ if __name__ == "__main__":
         database=sys.argv[3]
     )
     cursor = connection.cursor()
-    query = "SELECT id, name FROM states WHERE name LIKE '%N' ORDER BY states.id ASC"
+    query = "SELECT id, name FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC"
     cursor.execute(query)
     rows = cursor.fetchall()
     for row in rows:
