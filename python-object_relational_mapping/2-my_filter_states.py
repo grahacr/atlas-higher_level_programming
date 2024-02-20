@@ -17,8 +17,8 @@ if __name__ == "__main__":
     cursor = connection.cursor()
     state = sys.argv[4]
     query = ("SELECT id, name "
-    "FROM states WHERE name LIKE '{}' "
-    "ORDER BY states.id ASC".format(state + "%"))
+            "FROM states WHERE name LIKE '{}' "
+            "ORDER BY states.id ASC".format(state + "%"))
     cursor.execute(query)
     rows = cursor.fetchall()
     for row in rows:
