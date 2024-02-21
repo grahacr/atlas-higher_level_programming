@@ -27,7 +27,12 @@ if __name__ == "__main__":
     """create session instance object"""
     session = Session()
     """query returns states filtered by a in the name"""
-    a_state = session.query(State).filter(State.name.like('%a%')).order_by(State.id.asc()).all()
+    a_state = (
+        session.query(State)
+        .filter(State.name.like('%a%'))
+        .order_by(State.id.asc())
+        .all()
+    )
     for state in a_state:
         print("{}: {}".format(state.id, state.name))
     """close session"""
