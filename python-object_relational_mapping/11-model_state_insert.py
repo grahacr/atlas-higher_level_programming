@@ -27,8 +27,9 @@ if __name__ == "__main__":
     """create new session instance"""
     session = Session()
     new_state = State(name='Louisiana')
-    print(new_state.id)
     """add new state object to database"""
     session.add(new_state)
+    session.commit()
+    print(new_state.id)
     """close session"""
     session.close()
