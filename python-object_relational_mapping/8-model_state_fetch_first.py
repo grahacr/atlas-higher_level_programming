@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """
+module to print first state object in database
 """
 
 
@@ -15,15 +16,20 @@ if __name__ == "__main__":
     password = sys.argv[2]
     db = sys.argv[3]
 
+    """create engine and connect to database"""
     engine = create_engine(
         'mysql://{}:{}@localhost/{}'.format(username, password, db)
     )
+    """retrieve data for use"""
     Base.metadata.create_all(engine)
+    """use bind function to bind engine to session"""
     Session = sessionmaker(bind=engine)
+    """create session instance"""
     session = Session()
+    """query and print results of first state stored in variable"""
     first_state = session.query(State).first().order_by(State.id, State.name)
     if not first_state:
         print("Nothing\n")
     else:
         print(first_state)
-    session.close()
+    Session.close()
