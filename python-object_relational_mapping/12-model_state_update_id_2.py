@@ -27,7 +27,7 @@ if __name__ == "__main__":
     """create new session instance"""
     session = Session()
     """query for state matching certain id"""
-    state_update = session.query(State).filter(State.id == '2').first()
+    state_update = session.query(State).filter(State.id == 2).first()
     if state_update:
         """update name of State"""
         state_update.name = 'New Mexico'
