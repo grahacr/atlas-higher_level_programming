@@ -7,7 +7,6 @@ module defines base model connected to mySQL table
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import create_engine
-import Base
 
 Base = declarative_base()
 
