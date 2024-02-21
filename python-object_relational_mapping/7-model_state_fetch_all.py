@@ -30,5 +30,5 @@ if __name__ == "__main__":
     session = Session()
     """query the results and print states"""
     for instance in session.query(State).order_by(State.id).all():
-        print("{}: {}".format(instance.id, instane.name))
+        print("{}: {}".format(instance.id, instance.name))
     Session.close()
