@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
     """set up engine connection to database"""
     engine = create_engine(
-        f'mysql://{username}: {password}@localhost/{db}'
+        f'mysql://{username}:{password}@localhost/{db}'
     )
     """gather data from engine"""
     Base.metadata.create_all(engine)
