@@ -17,5 +17,19 @@ if __name__ == "__main__":
     state_name = sys.argv[4]
 
     engine = create_engine(
-        'mysql://{}:{}@localhost/{}'
+        f'mysql://{username}: {password}@localhost/{db}'
     )
+    Base.metadata.create_all(engine)
+
+    Session = sessionmaker(bind=engine)
+
+    session = Session()
+
+    state_ = (
+        session.query(State).filter(State.name == state_name).first()
+    )
+    if state_:
+        print("Not found")
+    else:
+        print(State.id)
+    session.close()
