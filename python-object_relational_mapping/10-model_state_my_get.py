@@ -29,7 +29,7 @@ if __name__ == "__main__":
     session = Session()
     """query returns state object if matching argument passed"""
     state_ = (
-        session.query(State).filter(State.name == state_name).first()
+        session.query(State).filter(State.name == state_name)
     )
     if state_:
         print("Not found")
