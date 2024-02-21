@@ -32,7 +32,7 @@ if __name__ == "__main__":
         session.query(State).filter(State.name == state_name).first()
     )
     if state_:
-        print("State.id")
+        print(f"{State.id}")
     else:
         print("Not found")
     """close session"""
