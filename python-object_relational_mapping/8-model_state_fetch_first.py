@@ -27,9 +27,9 @@ if __name__ == "__main__":
     """create session instance"""
     session = Session()
     """query and print results of first state stored in variable"""
-    first_state = session.query(State).first().order_by(State.id, State.name)
+    first_state = session.query(State).order_by(State.id, State.name).first()
     if not first_state:
         print("Nothing\n")
     else:
-        print(first_state)
+        print("{}: {}".format(first_state.id, first_state.name))
     Session.close()
