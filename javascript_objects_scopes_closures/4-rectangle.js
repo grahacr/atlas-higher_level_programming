@@ -17,12 +17,14 @@ class Rectangle {
       console.log(row);
     }
   }
-  rotate() {
-    const temp = this.width
+
+  rotate () {
+    const temp = this.width;
     this.width = this.height;
     this.height = temp;
   }
-  double() {
+
+  double () {
     this.height *= 2;
     this.width *= 2;
   }
