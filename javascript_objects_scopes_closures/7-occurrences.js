@@ -9,3 +9,4 @@ exports.nb0ccurences = function (list, searchElement) {
     }
     return count;
 }
+module.exports = nb0ccurences;
