@@ -2,6 +2,7 @@
 
 const request = require('request');
 const url = process.argv[2];
+const findId = '18';
 
 request.get(url, (error, response, body) => {
   if (error) {
@@ -9,11 +10,15 @@ request.get(url, (error, response, body) => {
     return;
   }
   const data = JSON.parse(body);
-  const findId = '18';
   let count = 0;
-  data.forEach(item => {
-    if (item.id === findId) {
-      count++;
+  data.results.forEach(film => {
+    if (film.characters) {
+      film.characters.forEach(character => {
+        const characterId = character.split('/');
+        if (characterId === findId) {
+          count++;
+        }
+      })
     }
   });
   console.log(count);
