@@ -14,7 +14,7 @@ request.get(url, (error, response, body) => {
   data.results.forEach(film => {
     if (film.characters) {
       film.characters.forEach(character => {
-        const characterId = character.split('/');
+        const characterId = character.split('/').pop();
         if (characterId === findId) {
           count++;
         }
