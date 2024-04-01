@@ -14,7 +14,7 @@ request.get(url, (error, response, body) => {
   let count = 0;
   data.forEach(film => {
     const characters = film.characters;
-    if (characters.include(charUrl + findId)) {
+    if (characters.includes(charUrl + findId)) {
       count++;
     }
   });
