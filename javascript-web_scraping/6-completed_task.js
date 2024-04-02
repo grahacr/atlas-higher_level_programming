@@ -21,7 +21,5 @@ request.get(apiTask, (error, response, body) => {
       }
     }
   });
-  userCompleted.forEach((count, userId) => {
-    console.log(`'${userId}: ${count}`);
-  });
+  console.log(userCompleted);
 });
