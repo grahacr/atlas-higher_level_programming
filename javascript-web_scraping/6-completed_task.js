@@ -21,5 +21,5 @@ request.get(apiTask, (error, response, body) => {
       }
     }
   });
-  console.log(userCompleted);
+  console.log(JSON.stringify(userCompleted));
 });
