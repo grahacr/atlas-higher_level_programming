@@ -9,15 +9,15 @@ request.get(apiTask, (error, response, body) => {
     return;
   }
   const tasks = JSON.parse(body);
-  const userCompleted = new Map();
+  const userCompleted = {};
   tasks.forEach(task => {
     const userId = task.userId;
     const completed = task.completed;
-    if (completed) {
-      if (userCompleted.has(userId)) {
-        userCompleted.set(userId, userCompleted.get(userId) + 1);
+    if (completed && userId) {
+      if (userCompleted[task.userId]) {
+        userCompleted[task.userId]++;
       } else {
-        userCompleted.set(userId, 1);
+        userCompleted[task.userId] = 1;
       }
     }
   });
